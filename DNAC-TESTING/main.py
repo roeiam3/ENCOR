@@ -1,3 +1,16 @@
+import subprocess
+import sys
+
+def install_packages():
+    try:
+        import requests, networkx, matplotlib
+    except ImportError:
+        print("[!] Missing dependencies. Installing...")
+        subprocess.check_call([sys.executable, "-m", "pip", "install", "-r", "requirements.txt"])
+
+install_packages()
+
+
 from dnac_client import get_token, get_topology
 import networkx as nx
 import matplotlib.pyplot as plt
