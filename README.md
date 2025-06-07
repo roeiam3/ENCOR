@@ -1,23 +1,25 @@
-# DNAC-TESTING – ENCOR API & Git Workflow Practice
+# ENCOR Programmability Projects
 
-A focused project for testing Cisco DNA Center (now Cisco Catalyst Center) APIs and reinforcing Git workflows.
+This repository contains focused projects aligned with the **Cisco ENCOR (350-401)** exam and real-world **network programmability** workflows.
 
----
-
-## Purpose
-
-- Query DNAC sandbox via REST APIs to retrieve physical device topology
-- Generate a visual network graph using Python (`networkx`, `matplotlib`)
-- Practice Git fundamentals: clone, commit, push, pull, and branch workflows
+Each folder represents a hands-on implementation using Python, REST APIs, automation tools, and version control practices.
 
 ---
 
-## Features
+## Projects
 
-- REST-based topology retrieval from DNAC
-- Topology graph rendering and auto-opening
-- One-file `.exe` build via PyInstaller
-- Lightweight, CLI-driven structure
+### `DNAC-TESTING/`  
+**Goal:**  
+Interact with the Cisco DNA Center (now Catalyst Center) Sandbox using REST APIs to retrieve and visualize device connectivity.
+
+**Key Highlights:**
+- Authenticates to Cisco DNAC sandbox
+- Pulls physical topology via API
+- Visualizes with `networkx` and `matplotlib`
+- Converts to a standalone `.exe`
+- Reinforces Git fundamentals (`add`, `commit`, `push`, `pull`)
 
 ---
+
+
 
