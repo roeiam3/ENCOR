@@ -27,8 +27,10 @@ def ParseJSON(response):
     #response is received as Python dict (Via .json())
     GoodLookingJSON = json.dumps(response, indent=2) 
     #print(GoodLookingJSON)
-    print(response["response"][0]["macAddress"])
-
+    #print(response["response"][0]["macAddress"])
+    for device in response["response"]:
+        print(device["hostname"],"runs",device["platformId"])
+        print("with an ip adress of -",device["managementIpAddress"],"and uptime of",device["upTime"])
 
 def RunAll():
     token = GetAPIToken()
