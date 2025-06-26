@@ -21,5 +21,13 @@ Interact with the Cisco DNA Center (now Catalyst Center) Sandbox using REST APIs
 
 ---
 
+### `JSON-Test/`
+**Goal:**  
+Learning, Testing and Implementing Python & JSON Functionalities
 
-
+**Key Highlights:**
+- Authenticating to DNAC via Prior Projects
+- Importing crucial modules
+- Using json.dumps to turn JSON output into Python dict
+- Using json.loads to turn Python dict into JSON output
+- Parsing via Loops / manually the Python dict using the JSON Structure for reference
